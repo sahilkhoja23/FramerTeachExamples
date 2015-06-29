@@ -3,11 +3,15 @@ sketch = Framer.Importer.load "imported/chat"
 
 # Make the chat view scrollable
 scroll = ScrollComponent.wrap(sketch.scroll)
+# Add a little padding on the bottom
+scroll.contentInset = 
+	bottom: 32
+# Set default scroll position 
 scroll.scrollY = scroll.content.height
+# Disable horizontal scrolling
 scroll.scrollHorizontal = false
 
-# Add a little padding on the bottom
-scroll.contentInset = {bottom: 32}
+
 
 # Set the beginner state for the microphone icon
 sketch.iconMicActive.visible = false
