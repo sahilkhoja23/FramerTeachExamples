@@ -33,7 +33,8 @@ sketch.iconMic.on Events.Click, ->
 	# Animate the active state
 	sketch.iconMicActive.animate
 		properties:
-			scale: 1, opacity: 1
+			scale: 1
+			opacity: 1
 		time: 0.4
 		
 	# Fade the text field
